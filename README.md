@@ -4,6 +4,7 @@ Um assistente interativo para conversas contextuais sobre documentos PDF. Ele co
 
 ## 🎥 Demonstração
 
+![]9(chatbot.git)
 
 ## 🚀 Instalação e Uso
 
