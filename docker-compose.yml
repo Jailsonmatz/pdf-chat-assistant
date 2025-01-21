@@ -1,0 +1,22 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    networks:
+      - chat-net
+
+  ui:
+    build: ./ui
+    ports:
+      - "8501:8501"
+    depends_on:
+      - api
+    networks:
+      - chat-net
+
+networks:
+  chat-net:
+    driver: bridge
